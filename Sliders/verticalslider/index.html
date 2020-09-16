@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>UI Slider</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+  <link rel='stylesheet' type='text/css' href='main.css'>
+  <script src='main.js'></script>
+</head>
+<body>
+
+<div class="background"></div>
+<div class="container">
+  <div class="control-box">
+    <div class="icon"><i class="far fa-eye"></i></div>
+    <div class="text">Am I Awake?</div>
+    <div class="numbers">
+      <div class="value">50%</div>
+    </div>
+    <div class="slider-container">
+      <span class="bar"><span class="fill"></span></span>
+      <input type="range" id="slider" class="slider" min="0" max="100" value="0">
+    </div>
+  </div>
+</div>
+
+</body>
+
+<script>
+  var controlBox = document.getElementsByClassName("control-box")[0]
+  var background = document.getElementsByClassName("background")[0]
+  var cbSlider = controlBox.querySelector("input.slider");
+  var cbFill = controlBox.querySelector(".bar .fill");
+  var cbValue = controlBox.querySelector(".value");
+
+  function setBar() {
+    var min = parseInt(cbSlider.getAttribute("min"));
+    var max = parseInt(cbSlider.getAttribute("max"));
+    var value = parseInt(cbSlider.value);
+    var percent = ((value - min) / (max - min)) * 100;
+
+    cbFill.style.height = percent + "%";
+    cbValue.innerText = Math.round(percent) + "%"
+
+    percent > 0 ? controlBox.classList.add("on") : controlBox.classList.remove("on");
+    percent < 30 ? background.classList.add("sleeping") : background.classList.remove("sleeping");
+  }
+  
+  setBar();
+
+  cbSlider.addEventListener("input", setBar);
+</script>
+</html>
