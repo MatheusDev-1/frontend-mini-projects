@@ -4,12 +4,12 @@ Repositório criado para listar os projetos pequenos que estou construíndo/cons
 
 ### Particles
 
-| Nome do Projeto | Descrição | Código do projeto | Ver projeto |
+| Nome | Descrição | Código | Ver projeto |
 | --- | --- | --- | --- |
 | Square Particles | Efeitos de partículas em cima de uma página em homenagem ao músico Nujabes, que já faleceu |     |     |
 
 ### Sliders
 
-| Nome do Projeto | Descrição | Código do projeto | Ver projeto |
+| Nome | Descrição | Código | Ver projeto |
 | --- | --- | --- | --- |
 | UI Slider - Inception | Slider feito em inspiração no tutorial da Code Minz e homenageando um dos meus filmes preferidos: Inception / A Origem |     |     |
