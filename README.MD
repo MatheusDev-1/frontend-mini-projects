@@ -12,4 +12,4 @@ Repositório criado para listar os projetos pequenos que estou construíndo/cons
 
 | Nome | Descrição | Código | Ver projeto |
 | --- | --- | --- | --- |
-| UI Slider - Inception | Slider feito em inspiração no tutorial da Code Minz e homenageando um dos meus filmes preferidos: Inception / A Origem |     |     |
+| Awaken Slider | Slider feito em inspiração no tutorial da Code Minz e homenageando um dos meus filmes preferidos: Inception / A Origem |     |     |
