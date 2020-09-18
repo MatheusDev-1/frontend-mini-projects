@@ -2,7 +2,7 @@
 
 Repositório criado para listar os projetos pequenos que estou construíndo/construí para aprimorar minhas habilidades em frontend (usando na maioria das vezes apenas Javascript, CSS e HTML)
 
-### Particles
+### Particles
 
 | Nome do Projeto | Descrição | Código do projeto | Ver projeto |
 | --- | --- | --- | --- |
